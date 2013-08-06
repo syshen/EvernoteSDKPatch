@@ -7,21 +7,33 @@
 //
 
 #import "SSAppDelegate.h"
-
+#import <Evernote-SDK-iOS/EvernoteSDK.h>
 #import "SSViewController.h"
 
 @implementation SSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  
+  NSString *EVERNOTE_HOST = BootstrapServerBaseURLStringSandbox;
+  NSString *CONSUMER_KEY = @"syshen";
+  NSString *CONSUMER_SECRET = @"e00b59b78c32006e";
+  
+  [EvernoteSession setSharedSessionHost:EVERNOTE_HOST
+                            consumerKey:CONSUMER_KEY
+                         consumerSecret:CONSUMER_SECRET];
+  
+  
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
   if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
       self.viewController = [[SSViewController alloc] initWithNibName:@"SSViewController_iPhone" bundle:nil];
   } else {
       self.viewController = [[SSViewController alloc] initWithNibName:@"SSViewController_iPad" bundle:nil];
   }
-  self.window.rootViewController = self.viewController;
+  
+  UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+  self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -45,7 +57,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-  // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+  [[EvernoteSession sharedSession] handleDidBecomeActive];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

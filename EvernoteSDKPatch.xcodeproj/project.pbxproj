@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AC79EC488464A0D9D090C57 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 944AA857E3764E2E8D743112 /* libPods.a */; };
 		80B0F52017AF4FFF0071FE8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B0F51F17AF4FFF0071FE8A /* UIKit.framework */; };
 		80B0F52217AF4FFF0071FE8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B0F52117AF4FFF0071FE8A /* Foundation.framework */; };
 		80B0F52417AF4FFF0071FE8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B0F52317AF4FFF0071FE8A /* CoreGraphics.framework */; };
@@ -19,9 +20,15 @@
 		80B0F53917AF4FFF0071FE8A /* SSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B0F53817AF4FFF0071FE8A /* SSViewController.m */; };
 		80B0F53C17AF4FFF0071FE8A /* SSViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80B0F53A17AF4FFF0071FE8A /* SSViewController_iPhone.xib */; };
 		80B0F53F17AF4FFF0071FE8A /* SSViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80B0F53D17AF4FFF0071FE8A /* SSViewController_iPad.xib */; };
+		80B75E2917AF542B006F153B /* SSNotebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B75E2717AF542B006F153B /* SSNotebookViewController.m */; };
+		80B75E2A17AF542B006F153B /* SSNotebookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80B75E2817AF542B006F153B /* SSNotebookViewController.xib */; };
+		80B75E2E17AF543C006F153B /* SSNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B75E2C17AF543C006F153B /* SSNoteViewController.m */; };
+		80B75E2F17AF543C006F153B /* SSNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80B75E2D17AF543C006F153B /* SSNoteViewController.xib */; };
+		80B75E3217AF5D92006F153B /* EvernoteNoteStore+SSPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B75E3117AF5D92006F153B /* EvernoteNoteStore+SSPatch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78A90294093F42F583380357 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		80B0F51C17AF4FFF0071FE8A /* EvernoteSDKPatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvernoteSDKPatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B0F51F17AF4FFF0071FE8A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		80B0F52117AF4FFF0071FE8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +46,15 @@
 		80B0F53817AF4FFF0071FE8A /* SSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSViewController.m; sourceTree = "<group>"; };
 		80B0F53B17AF4FFF0071FE8A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SSViewController_iPhone.xib; sourceTree = "<group>"; };
 		80B0F53E17AF4FFF0071FE8A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SSViewController_iPad.xib; sourceTree = "<group>"; };
+		80B75E2617AF542B006F153B /* SSNotebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNotebookViewController.h; sourceTree = "<group>"; };
+		80B75E2717AF542B006F153B /* SSNotebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNotebookViewController.m; sourceTree = "<group>"; };
+		80B75E2817AF542B006F153B /* SSNotebookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSNotebookViewController.xib; sourceTree = "<group>"; };
+		80B75E2B17AF543C006F153B /* SSNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNoteViewController.h; sourceTree = "<group>"; };
+		80B75E2C17AF543C006F153B /* SSNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNoteViewController.m; sourceTree = "<group>"; };
+		80B75E2D17AF543C006F153B /* SSNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSNoteViewController.xib; sourceTree = "<group>"; };
+		80B75E3017AF5D92006F153B /* EvernoteNoteStore+SSPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EvernoteNoteStore+SSPatch.h"; sourceTree = "<group>"; };
+		80B75E3117AF5D92006F153B /* EvernoteNoteStore+SSPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EvernoteNoteStore+SSPatch.m"; sourceTree = "<group>"; };
+		944AA857E3764E2E8D743112 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +65,7 @@
 				80B0F52017AF4FFF0071FE8A /* UIKit.framework in Frameworks */,
 				80B0F52217AF4FFF0071FE8A /* Foundation.framework in Frameworks */,
 				80B0F52417AF4FFF0071FE8A /* CoreGraphics.framework in Frameworks */,
+				4AC79EC488464A0D9D090C57 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +75,12 @@
 		80B0F51317AF4FFF0071FE8A = {
 			isa = PBXGroup;
 			children = (
+				80B75E3017AF5D92006F153B /* EvernoteNoteStore+SSPatch.h */,
+				80B75E3117AF5D92006F153B /* EvernoteNoteStore+SSPatch.m */,
 				80B0F52517AF4FFF0071FE8A /* EvernoteSDKPatch */,
 				80B0F51E17AF4FFF0071FE8A /* Frameworks */,
 				80B0F51D17AF4FFF0071FE8A /* Products */,
+				78A90294093F42F583380357 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +98,7 @@
 				80B0F51F17AF4FFF0071FE8A /* UIKit.framework */,
 				80B0F52117AF4FFF0071FE8A /* Foundation.framework */,
 				80B0F52317AF4FFF0071FE8A /* CoreGraphics.framework */,
+				944AA857E3764E2E8D743112 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,6 +112,12 @@
 				80B0F53817AF4FFF0071FE8A /* SSViewController.m */,
 				80B0F53A17AF4FFF0071FE8A /* SSViewController_iPhone.xib */,
 				80B0F53D17AF4FFF0071FE8A /* SSViewController_iPad.xib */,
+				80B75E2617AF542B006F153B /* SSNotebookViewController.h */,
+				80B75E2717AF542B006F153B /* SSNotebookViewController.m */,
+				80B75E2817AF542B006F153B /* SSNotebookViewController.xib */,
+				80B75E2B17AF543C006F153B /* SSNoteViewController.h */,
+				80B75E2C17AF543C006F153B /* SSNoteViewController.m */,
+				80B75E2D17AF543C006F153B /* SSNoteViewController.xib */,
 				80B0F52617AF4FFF0071FE8A /* Supporting Files */,
 			);
 			path = EvernoteSDKPatch;
@@ -117,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80B0F54217AF4FFF0071FE8A /* Build configuration list for PBXNativeTarget "EvernoteSDKPatch" */;
 			buildPhases = (
+				1D3E4A9F83794C6EB48645D3 /* Check Pods Manifest.lock */,
 				80B0F51817AF4FFF0071FE8A /* Sources */,
 				80B0F51917AF4FFF0071FE8A /* Frameworks */,
 				80B0F51A17AF4FFF0071FE8A /* Resources */,
+				D9752935F0CD41C8978389C9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,10 +197,45 @@
 				80B0F53617AF4FFF0071FE8A /* Default-568h@2x.png in Resources */,
 				80B0F53C17AF4FFF0071FE8A /* SSViewController_iPhone.xib in Resources */,
 				80B0F53F17AF4FFF0071FE8A /* SSViewController_iPad.xib in Resources */,
+				80B75E2A17AF542B006F153B /* SSNotebookViewController.xib in Resources */,
+				80B75E2F17AF543C006F153B /* SSNoteViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D3E4A9F83794C6EB48645D3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9752935F0CD41C8978389C9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		80B0F51817AF4FFF0071FE8A /* Sources */ = {
@@ -181,6 +245,9 @@
 				80B0F52C17AF4FFF0071FE8A /* main.m in Sources */,
 				80B0F53017AF4FFF0071FE8A /* SSAppDelegate.m in Sources */,
 				80B0F53917AF4FFF0071FE8A /* SSViewController.m in Sources */,
+				80B75E2917AF542B006F153B /* SSNotebookViewController.m in Sources */,
+				80B75E2E17AF543C006F153B /* SSNoteViewController.m in Sources */,
+				80B75E3217AF5D92006F153B /* EvernoteNoteStore+SSPatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +341,7 @@
 		};
 		80B0F54317AF4FFF0071FE8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78A90294093F42F583380357 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EvernoteSDKPatch/EvernoteSDKPatch-Prefix.pch";
@@ -285,6 +353,7 @@
 		};
 		80B0F54417AF4FFF0071FE8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78A90294093F42F583380357 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EvernoteSDKPatch/EvernoteSDKPatch-Prefix.pch";
@@ -313,6 +382,7 @@
 				80B0F54417AF4FFF0071FE8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
