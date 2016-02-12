@@ -9,7 +9,7 @@ http://dev.evernote.com/documentation/cloud/chapters/thumbnails.php
 
 ### Installation
 
-* Cocoapods: Search and install with SSEvernoteSDKPatch
+* CocoaPods: Search and install with SSEvernoteSDKPatch
 * Manual: Drag EvernoteNoteStore+SSPatch.h and EvernoteNoteStore+SSPatch.m into your project
 
 ### How to use (Sample)
